@@ -31,7 +31,7 @@ Transportation companies often face challenges in managing Bilty, Hire Challen, 
 - **E-way bill integration**: Ensures seamless compliance with regulatory requirements.
 
 ### Hire Challen Management
-- **Issue Hire Challens**: Specifies vehicle details, duration, and cost for vehicle hiring.
+- **Issue Hire Challens**: Specifies vehicle details, duration, and cost for vehicle hire.
 
 ### Invoice Management
 - **Automatic invoice generation**: Based on Bilty and Hire Challen data.
@@ -81,10 +81,10 @@ The class diagram showcases backend logic classes with attributes and methods, a
 - **Methods**: `getDriverDetails()`, `assignDriverToJob()`.
 
 ### Vehicle (Optional)
-- **Attributes**: vehicleID, registrationNumber, model, capacity.
+- **Attributes**: vehicle, registration number, model, capacity.
 - **Methods**: `getVehicleDetails()`, `trackVehicleLocation()`.
 
-### Bilty
+### Billy
 - **Attributes**: biltyID, customerID (FK), consigneeID (FK), origin, destination, goodsDescription, ewayBillNumber (Optional).
 - **Methods**: `createBilty()`, `generateEwayBill()` (Optional).
 
@@ -93,7 +93,7 @@ The class diagram showcases backend logic classes with attributes and methods, a
 - **Methods**: `createHireChallen()`, `assignVehicle()` (Optional).
 
 ### Invoice
-- **Attributes**: invoiceID, biltyID (FK), challenID (FK - Optional), amount, taxDetails.
+- **Attributes**: invoiceID, biltyID (FK), challenID (FK - Optional), amount, tax details.
 - **Methods**: `generateInvoice()`.
 
 ## 6. Testing Strategies
@@ -109,7 +109,7 @@ The class diagram showcases backend logic classes with attributes and methods, a
 - **Outline**: Ensures the application meets all functional and non-functional requirements.
 
 ### User Acceptance Testing (UAT)
-- **Importance**: Gathers feedback from potential users to refine the application before deployment.
+- **Importance**: Gather feedback from potential users to refine the application before deployment.
 
 ## 7. Software Development Life Cycle (SDLC) Model
 
