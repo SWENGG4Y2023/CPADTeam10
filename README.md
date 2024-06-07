@@ -141,12 +141,12 @@ The class diagram showcases backend logic classes with attributes and methods, a
                        +---------------------------+
                        |       Customer            |
                        +---------------------------+
-                               |        ▲
-                               |        |
-                               ▼        |
+                               |         ▲
+                               |         |
+                               ▼         |
 +-----------------+     Customer Data    |
 |                 |                      |
-| Manage Customer |<----------------------|
+| Manage Customer |<---------------------|
 |   Information   |                      |
 |                 |                      |
 +-----------------+                      |
