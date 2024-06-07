@@ -14,7 +14,7 @@
 
 ## Project Documents :clipboard::
 
-- [Application Document](/CPADTeam10/TransportManagement%20Document.md)
+- [Application Document](/TransportManagement%20Document.pdf)
 
 # SAAS-Based Transport Management Application
 
