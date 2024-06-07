@@ -133,3 +133,153 @@ The class diagram showcases backend logic classes with attributes and methods, a
 - **Authentication and Access Control**: Implement user authentication and access control mechanisms.
 - **Data Encryption**: Encrypt sensitive information.
 - **Secure Coding Practices**: Regular vulnerability scanning and compliance with data privacy regulations.
+
+
+
+# DATA-FLOW-DIAGRAM
+
+### Level 0 (Context Diagram)
+The context diagram shows the overall system and its interactions with external entities.
+
+#### External Entities:
+1. Customer
+2. Admin (System Administrator)
+
+#### Processes:
+1. SAAS-Based Transport Management Application
+
+#### Data Stores:
+1. Customer Database
+2. Driver Database (Optional)
+3. Vehicle Database (Optional)
+4. Bilty Database
+5. Hire Challen Database
+6. Invoice Database
+
+#### Data Flows:
+- Customer Data
+- Driver Data
+- Vehicle Data
+- Bilty Details
+- Hire Challen Details
+- Invoice Details
+
+### Level 1 DFD
+The Level 1 DFD provides more detail about the internal processes of the SAAS-Based Transport Management Application.
+
+#### Processes:
+1. Manage Customer Information
+2. Manage Bilty
+3. Manage Hire Challen
+4. Manage Invoice
+5. (Optional) Manage Driver Information
+6. (Optional) Manage Vehicle Information
+
+#### Data Stores:
+1. Customer Database
+2. Driver Database (Optional)
+3. Vehicle Database (Optional)
+4. Bilty Database
+5. Hire Challen Database
+6. Invoice Database
+
+#### Data Flows:
+- Customer Information
+- Bilty Information
+- Hire Challen Information
+- Invoice Information
+- Driver Information (Optional)
+- Vehicle Information (Optional)
+
+Here's a detailed description of each Level 1 process:
+
+1. **Manage Customer Information**
+    - Input: Customer Data
+    - Output: Customer Information to Customer Database
+    - Description: Handles the addition, update, and retrieval of customer information.
+
+2. **Manage Bilty**
+    - Input: Bilty Data
+    - Output: Bilty Information to Bilty Database, E-way Bill Information
+    - Description: Manages Bilty creation and updates, integrates with e-way bill generation.
+
+3. **Manage Hire Challen**
+    - Input: Hire Challen Data
+    - Output: Hire Challen Information to Hire Challen Database
+    - Description: Manages the issuance of Hire Challens with vehicle details, duration, and cost.
+
+4. **Manage Invoice**
+    - Input: Bilty Data, Hire Challen Data
+    - Output: Invoice Information to Invoice Database
+    - Description: Generates invoices based on Bilty and Hire Challen data, includes tax calculations.
+
+5. **(Optional) Manage Driver Information**
+    - Input: Driver Data
+    - Output: Driver Information to Driver Database
+    - Description: Tracks driver details, licenses, and assigns them to jobs.
+
+6. **(Optional) Manage Vehicle Information**
+    - Input: Vehicle Data
+    - Output: Vehicle Information to Vehicle Database
+    - Description: Monitors vehicle location, maintenance schedules, and fuel consumption.
+
+### Data Flow Diagram (Level 1)
+The Level 1 DFD for the SAAS-Based Transport Management Application can be illustrated as follows:
+
+
+                       +---------------------------+
+                       |       Customer            |
+                       +---------------------------+
+                               |        ▲
+                               |        |
+                               ▼        |
++-----------------+     Customer Data    |
+|                 |                      |
+| Manage Customer |<----------------------|
+|   Information   |                      |
+|                 |                      |
++-----------------+                      |
+        |                                |
+        | Customer Information           |
+        ▼                                |
++-----------------+                      |
+| Customer        |                      |
+| Database        |                      |
++-----------------+                      |
+                                         |
+                       +-----------------|-------------------------------------+
+                       | SAAS-Based Transport Management Application         |
+                       |                                                     |
+                       |  +------------------+   +----------------------+    |
+                       |  | Manage Bilty     |   | Manage Hire Challen  |    |
+                       |  +------------------+   +----------------------+    |
+                       |        |                          |                  |
+                       |        | Bilty Information        | Hire Challen Info|
+                       |        ▼                          ▼                  |
+                       |  +---------------+         +-----------------+      |
+                       |  | Bilty Database|         | Hire Challen    |      |
+                       |  +---------------+         | Database        |      |
+                       |                            +-----------------+      |
+                       |                                                     |
+                       |  +------------------+   +----------------------+    |
+                       |  | Manage Invoice   |   | Manage Driver Info (Opt)  |
+                       |  +------------------+   +----------------------+    |
+                       |        |                          |                  |
+                       |        | Invoice Information      | Driver Info      |
+                       |        ▼                          ▼                  |
+                       |  +---------------+         +-----------------+      |
+                       |  | Invoice       |         | Driver Database |      |
+                       |  | Database      |         +-----------------+      |
+                       |  +---------------+                                      |
+                       |  +------------------+                                  |
+                       |  | Manage Vehicle Info (Optional)                      |
+                       |  +------------------+                                  |
+                       |        |                                                |
+                       |        | Vehicle Information                           |
+                       |        ▼                                                |
+                       |  +---------------+                                      |
+                       |  | Vehicle       |                                      |
+                       |  | Database      |                                      |
+                       |  +---------------+                                      |
+                       +---------------------------------------------------------+
+
