@@ -7,10 +7,10 @@
 ## Team Members:
 | Team Members      | Student ID   |
 |-------------------|--------------|
-| :woman: Shravya Shreya | 2021hs70011 |
-| :man: Deev Pal         | 2021hs70025 |
-| :man: Aryan Saxena     | 2021hs70016 |
-| :man: Yash Kanoria     | 2021hs70002 |
+| :woman: Shravya Shreya | 2021HS70011 |
+| :man: Deev Pal         | 2021HS70025 |
+| :man: Aryan Saxena     | 2021HS70016 |
+| :man: Yash Kanoria     | 2021HS70002 |
 
 ## Project Documents :clipboard::
 
