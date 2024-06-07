@@ -22,7 +22,7 @@ This repository contains the SAAS-Based Transport Management Application, a clou
 
 ## 1. Introduction
 
-Transportation companies often face challenges in managing Bilty, Hire Challen, and Invoices. This application aims to automate these tasks and enhance operational efficiency.
+Transportation companies often face challenges in managing Bilty, Hire challenges, and Invoices. This application aims to automate these tasks and enhance operational efficiency.
 
 ## 2. System Functionalities
 
