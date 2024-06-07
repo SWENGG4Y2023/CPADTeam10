@@ -12,6 +12,10 @@
 | :man: Aryan Saxena     | 2021hs70016 |
 | :man: Yash Kanoria     | 2021hs70002 |
 
+## Project Documents :clipboard::
+
+- [Application Document](/CPADTeam10/TransportManagement%20Document.md)
+
 # SAAS-Based Transport Management Application
 
 This repository contains the SAAS-Based Transport Management Application, a cloud-based solution designed to streamline operations for transportation companies. The following sections provide an overview of the application's functionalities, technical architecture, development process, and testing strategies.
