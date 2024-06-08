@@ -15,8 +15,8 @@
 ## Project Documents :clipboard::
 
 - 💻 [Application Document](/TransportManagement.pdf)
-- 📺 [Application Front-End](/transportSSRC-master)
-- 📲 [Application Back-End](/)
+- 📺 [Application Front-End](/flutter_app)
+- 📲 [Application Back-End](/backend)
 
 # SAAS-Based Transport Management Application
 
